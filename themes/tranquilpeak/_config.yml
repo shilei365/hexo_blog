@@ -58,10 +58,10 @@ sidebar:
             url: /#about
             icon: question
     author_links:
-        # github:
-        #     title: global.github
-        #     url: https://github.com/
-        #     icon: github
+        github:
+            title: global.github
+            url: https://github.com/shilei365
+            icon: github
         # stack_overflow:
         #     title: global.stack_overflow
         #     url: http://stackoverflow.com/users
@@ -82,10 +82,10 @@ sidebar:
         #     title: global.linkedin
         #     url: https://www.linkedin.com/profile/
         #     icon: linkedin
-        # mail:
-        #     title: global.mail
-        #     url: mailto:
-        #     icon: envelope-o
+        mail:
+            title: global.mail
+            url: mailto:shilei365@gmail.com
+            icon: envelope-o
     rss:
         rss:
             title: global.rss
@@ -112,13 +112,13 @@ header:
 # Author
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email:
-    location:
+    email: shilei365@gmail.com
+    location: Berlin    
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture:
+    picture: bestcome.jpg
     # Your Twitter username without the @. E.g : `tranquilpeak`
     twitter:
     # Your personal google plus profile id, not your blog or business page id.
@@ -142,12 +142,12 @@ author:
 # large sidebar is swiped on all lower screens
 # 5: Display header bar on all screens and large sidebar is swiped on large screen
 # 6: Display header bar on all screens and medium sidebar is swiped
-sidebar_behavior: 1
+sidebar_behavior: 2
 # Hide sidebar on all article page to let article take full width to improve reading, and
 # enjoy wide images and cover images. (true: enable, false: disable)
 clear_reading: true
 # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
-thumbnail_image: true
+thumbnail_image: false
 # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
 # Set this value to `right` if you have old posts to keep the old style on them
 # and define `thumbnailImagePosition` on a post to overwrite this setting
