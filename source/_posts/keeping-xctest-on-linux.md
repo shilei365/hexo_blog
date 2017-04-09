@@ -114,6 +114,7 @@ class BananaTests: XCTestCase {
 现在当你运行这个测试在macOS上时，我们的保障测试程序将会失败：
 
 ![因为我们忘了添加一个测试到`allTests`数组中，所以测试失败了](keeping-xctest-on-linux/xcode-xctest-linux-safeguard-1550px.png)
+###### (*因为我们忘了添加一个测试到`allTests`数组中，所以测试失败了*)
 
 我非常喜欢这个。很显然，只有当你希望`allTests`属性数组中包含每个测试时它才有用。也就是说，你将必须像上面所做的那样在条件编译块中包含进去任何针对Darwin或Linux的测试。我相信对于大部分代码库来说这是一个可以接受的限制。
 
@@ -121,6 +122,7 @@ class BananaTests: XCTestCase {
 另一个问题呢，验证`LinuxMain.swift`是否完整？ 这个更难。`LinuxMain.swift`不是(或者说 不能是)当前测试目标(Target)的一部分，所以你很难轻易的验证在`XCTMain`中有些什么。
 
 ![当你试着添加`LinuxMain.swift`到测试目标时将会出现错误](keeping-xctest-on-linux/xcode-adding-LinuxMain-to-test-target-1400px.png)
+###### (*当你试着添加`LinuxMain.swift`到测试目标时将会出现错误*)
 
 我能想到的唯一的解决办法可能是添加一个*Run Script*到你的测试目标中，用脚本去解析`LinuxMain.swift`中的代码，然后用某种方法去比较测试目标中数组的个数和测试单元的个数。我没有试过，但听起来很复杂。
 
